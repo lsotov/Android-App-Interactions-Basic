@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">App Interaction</string>
+    <string name="call">Call</string>
+    <string name="browse">browse</string>
+    <string name="chooser_title">Browse with</string>
+    <string name="Share">Share</string>
+</resources>
