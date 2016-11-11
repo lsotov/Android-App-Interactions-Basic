@@ -43,6 +43,11 @@ public class ShareableActivity extends Activity {
     // You must always specify a result code with the result.
     // Generally, it's either RESULT_OK or RESULT_CANCELED.
     // You can then provide additional data with an Intent, as necessary.
+    // There's no need to check whether your activity was started with
+    // startActivity() or startActivityForResult(). Simply call setResult() if the intent that
+    // started your activity might expect a result. If the originating activity had called
+    // startActivityForResult(), then the system delivers it the result you supply to setResult();
+    // otherwise, the result is ignored.
     public void ReturnResultToActivity(){
         // Create intent to deliver some kind of result data
         Intent result = new Intent("com.example.RESULT_ACTION", Uri.parse("content://result_uri"));
